@@ -1,71 +1,46 @@
-# Getting Started with Create React App
+Weather Forecast App
+This application provides a 5-day weather forecast for a selected city. The app displays key weather information, including temperature, humidity, wind speed, and weather conditions, using a clean and minimalistic design.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Output Description
 
-## Available Scripts
+1. Application Header
+A green glowing header with the text "Weather Forecast."
+A search bar allows users to input the name of any city to retrieve its weather data.
+A "Search" button triggers the weather search functionality.
 
-In the project directory, you can run:
+2. City Information
+The city name (e.g., "East York") is displayed below the search bar to indicate the selected city.
 
-### `npm start`
+3. Weather Forecast Cards
+The app displays weather information for each day in individual cards.
+Each card includes:
+Date: The day and date of the forecast (e.g., "Thu Nov 28 2024").
+Weather Icon: An icon representing the weather condition (e.g., cloud for "overcast clouds").
+Weather Description: A short description of the condition (e.g., "scattered clouds").
+Current Temperature: Displayed prominently (e.g., "Temp: 5.2°C").
+Maximum and Minimum Temperatures: Highlighted with red and blue colors for better clarity.
+Humidity: Displayed as a percentage.
+Wind Speed: Measured in meters per second (m/s).
+Example Output
+City: East York
+Date	Weather	Temp	Max Temp	Min Temp	Humidity	Wind Speed
+Thu Nov 28 2024	Overcast Clouds	5.2°C	5.2°C	-1.2°C	77%	7.3 m/s
+Fri Nov 29 2024	Scattered Clouds	-0.6°C	1.5°C	-4.8°C	60%	6.23 m/s
+Visual Example
+Header and Forecast Cards
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Explanation
+The app layout is divided into three sections:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Header Section:
+The app title and search bar for user input.
+City Name Section:
+Displays the selected city name dynamically.
+Forecast Cards Section:
+Dynamically generated cards containing daily weather information.
+The forecast information is fetched from the OpenWeatherMap API, parsed, and displayed in an intuitive format.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-
-### `npm run build` fails to minify 
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+How to Use the App
+Enter the city name in the search bar.
+Click on the "Search" button.
+The app fetches and displays the 5-day weather forecast for the selected city in the form of individual cards.
